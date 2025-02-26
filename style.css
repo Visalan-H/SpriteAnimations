@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+div {
+    background: url('./sprite.jpg');
+    width: 300px;
+    height: 700px;
+    background-size: 630% 310%;
+    background-position: 3% 100%;
+    animation: meow 0.6s steps(5,jump-end) infinite alternate forwards;
+}
+
+@keyframes meow {
+    from {
+        background-position: 3% 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+
+}
